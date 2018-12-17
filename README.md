@@ -1,5 +1,6 @@
 # testpflag
 
+[github repo](https://github.com/spf13/pflag)
 
 [参考网址](https://o-my-chenjian.com/2017/09/20/Using-Flag-And-Pflag-With-Golang/)
 
@@ -41,4 +42,30 @@ flagname= 1234
 
 
 [git rm](https://my.oschina.net/dlpinghailinfeng/blog/388606)
+
+
+- flag
+- pflag
+
+flag命令行语法
+-flag XX
+--flag XX
+-flag=XX
+--flag=XXX
+
+pflag命令行语法
+     --flag    // 布尔flags, 或者非必须选项默认值
+     --flag x  // 只对于没有默认值的flags
+     --flag=x
+--flag 
+--flag XX
+--flag=XX
+
+GNU Argument Syntax
+
+https://www.gnu.org/software/libc/manual/html_node/Argument-Syntax.html
+
+```shell
+go test github.com/spf13/pflag
+```
 
